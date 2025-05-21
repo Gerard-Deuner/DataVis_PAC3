@@ -12,12 +12,13 @@ df <- read.csv("hotel_bookings.csv")
 
 # Preprocessar les dades agrupant els bookings per estació de l'any
 df <- df %>%
-    season = case_when(
+    mutate(season = case_when(
       arrival_date_month %in% c("December", "January", "February") ~ "Hivern",
       arrival_date_month %in% c("March", "April", "May") ~ "Primavera",
       arrival_date_month %in% c("June", "July", "August") ~ "Estiu",
       TRUE ~ "Tardor"
     )
+  )
 
 # Calcular el ADR mitjà per país i per estació de l'any
 aggregated <- df %>%
