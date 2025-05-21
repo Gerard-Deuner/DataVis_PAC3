@@ -69,7 +69,8 @@ ui <- fluidPage(
         tags$ul(
           tags$li("Dades: hotel_bookings.csv (Nuno Antonio, Ana de Almeida, Luis Nunes. Hotel booking demand datasets. Data in Brief, 22 (2019)"),
           tags$li("Transformacions: integració mapa, assignació d’estacions, càlcul ADR mitjà per país i estació"),
-          tags$li("Eines: R - Shiny, dplyr, leaflet, ggplot2")
+          tags$li("Eines: R - Shiny, dplyr, leaflet, ggplot2"),
+          tags$li("Codi per a crear la Shiny App: https://github.com/Gerard-Deuner/DataVis_PAC3/")
         ),
         h4("Narrativa Visual"),
         tags$ul(
